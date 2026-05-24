@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var stored = localStorage.getItem("aanya-theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+  <title>Shailesh Ghode | Product Management Expert</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Main site navigation: stays at the top while you scroll -->
+  <nav class="nav">
+    <!-- Brand / logo area on the left -->
+    <a href="index.html" class="nav__brand">Shailesh Ghode</a>
+
+    <div class="nav__controls">
+      <ul id="nav-menu" class="nav__links">
+        <li><a href="index.html" class="nav__link active">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button type="button" class="nav__theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+      <button
+        class="nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <p class="hero__eyebrow">PORTFOLIO 2026</p>
+    <h1 class="hero__title">I design products EdTech users actually find useful.</h1>
+    <p class="hero__subtitle">Leading Product Management, Learning Design, Content, Pedagogy, Quality and Delivery Teams. Lead Product Manager with 25 years of experience in EdTech.</p>
+    <a href="projects.html" class="hero__cta btn-shine">See My Work →</a>
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+  <section class="skills">
+    <h2 class="skills__heading">What I Do</h2>
+    <p class="skills__tagline">A leadership journey shaped by 25 years of driving impactful EdTech products, learning innovation, and academic excellence.</p>
+
+    <div class="skills__grid">
+      <!-- Product Management card -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">📘</span>
+        <h3 class="skills__name">Product Management</h3>
+        <p class="skills__desc">Driving end-to-end product strategy, roadmap planning, execution, and lifecycle management for impactful EdTech solutions.</p>
+      </article>
+
+      <!-- Learning Design card -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">🎓</span>
+        <h3 class="skills__name">Learning Design</h3>
+        <p class="skills__desc">Designing curriculum-aligned, outcome-driven learning experiences for K-12 and digital education platforms.</p>
+      </article>
+
+      <!-- Pedagogy & Instructional Strategy card -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">🧠</span>
+        <h3 class="skills__name">Pedagogy &amp; Instructional Strategy</h3>
+        <p class="skills__desc">Building learner-centric approaches aligned with modern educational frameworks and NEP-focused practices.</p>
+      </article>
+
+      <!-- Teaching & Training card -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">👨‍🏫</span>
+        <h3 class="skills__name">Teaching &amp; Training</h3>
+        <p class="skills__desc">Leading teacher enablement, academic training, onboarding, and capability-building initiatives at scale.</p>
+      </article>
+
+      <!-- Content Development card -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">📚</span>
+        <h3 class="skills__name">Content Development</h3>
+        <p class="skills__desc">Managing creation of high-quality academic content, assessments, digital resources, and interactive learning materials.</p>
+      </article>
+
+      <!-- Quality & Delivery Management card -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">📊</span>
+        <h3 class="skills__name">Quality &amp; Delivery Management</h3>
+        <p class="skills__desc">Ensuring excellence in academic delivery, product quality, process optimization, and cross-functional execution.</p>
+      </article>
+
+      <!-- EdTech Leadership card -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">🚀</span>
+        <h3 class="skills__name">EdTech Leadership</h3>
+        <p class="skills__desc">Leading multidisciplinary teams across Product, Content, Pedagogy, Quality, and Operations with a focus on innovation and scalability.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__accent" aria-hidden="true"></div>
+      <div class="footer__columns">
+        <div class="footer__brand">
+          <p class="footer__name">Shail Ghode</p>
+          <p class="footer__tagline">Driving impactful EdTech products through innovation, pedagogy, and product leadership.</p>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__heading">Quick links</h2>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__heading">Social</h2>
+          <ul class="footer__social">
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><span aria-hidden="true">💼</span></a></li>
+            <li><a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Medium"><span aria-hidden="true">✍️</span></a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter"><span aria-hidden="true">🐦</span></a></li>
+            <li><a href="mailto:shailesh.ghode@example.com" class="social-icon-btn" aria-label="Email"><span aria-hidden="true">✉️</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Shail Ghode — Built with passion for education, innovation, and lifelong learning. <span class="footer__heart" aria-hidden="true">♥</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

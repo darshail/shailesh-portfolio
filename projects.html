@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var stored = localStorage.getItem("aanya-theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+  <title>Projects | Shailesh Ghode</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav__brand">Shailesh Ghode</a>
+    <div class="nav__controls">
+      <ul id="nav-menu" class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="projects.html" class="nav__link active">Projects</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button type="button" class="nav__theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="projects-header">
+    <h1 class="projects-header__title">Featured Initiatives</h1>
+    <p class="projects-header__subtitle">25 years of driving innovation across Product, Pedagogy, Learning Design, and EdTech transformation.</p>
+  </header>
+
+  <section class="projects">
+    <div class="projects-marquee" aria-hidden="true">
+      <div class="projects-marquee__track">
+        <div class="projects-marquee__row">
+          <span class="projects-marquee__pill">Fintech</span>
+          <span class="projects-marquee__pill">Edtech</span>
+          <span class="projects-marquee__pill">Healthcare</span>
+          <span class="projects-marquee__pill">B2B</span>
+          <span class="projects-marquee__pill">A11y</span>
+          <span class="projects-marquee__pill">Design Systems</span>
+          <span class="projects-marquee__pill">Marketplace</span>
+          <span class="projects-marquee__pill">Data Viz</span>
+          <span class="projects-marquee__pill">Internal Tools</span>
+          <span class="projects-marquee__pill">UX Writing</span>
+        </div>
+        <div class="projects-marquee__row">
+          <span class="projects-marquee__pill">Fintech</span>
+          <span class="projects-marquee__pill">Edtech</span>
+          <span class="projects-marquee__pill">Healthcare</span>
+          <span class="projects-marquee__pill">B2B</span>
+          <span class="projects-marquee__pill">A11y</span>
+          <span class="projects-marquee__pill">Design Systems</span>
+          <span class="projects-marquee__pill">Marketplace</span>
+          <span class="projects-marquee__pill">Data Viz</span>
+          <span class="projects-marquee__pill">Internal Tools</span>
+          <span class="projects-marquee__pill">UX Writing</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects__grid">
+      <article class="project-card reveal">
+        <div class="project-card__media">
+          <img class="project-card__image" src="https://placehold.co/640x360/4f46e5/ffffff?text=AI-Driven+Learning+Ecosystem" alt="AI-Driven Learning Ecosystem" width="640" height="360">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">AI-Driven Learning Ecosystem</h3>
+          <p class="project-card__desc">Building intelligent academic workflows and personalized learning experiences for schools.</p>
+          <div class="project-card__tags">
+            <span class="project-card__tag">AI</span>
+            <span class="project-card__tag">Product Management</span>
+            <span class="project-card__tag">EdTech</span>
+          </div>
+          <a href="#" class="project-card__link">View Details →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__media">
+          <img class="project-card__image" src="https://placehold.co/640x360/0ea5e9/ffffff?text=Digital+Math+Tinkering+Lab" alt="Digital Math Tinkering Lab" width="640" height="360">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Digital Math Tinkering Lab</h3>
+          <p class="project-card__desc">Designed interactive classroom experiences for conceptual mathematics learning on IFPDs.</p>
+          <div class="project-card__tags">
+            <span class="project-card__tag">Learning Design</span>
+            <span class="project-card__tag">Mathematics</span>
+            <span class="project-card__tag">Innovation</span>
+          </div>
+          <a href="#" class="project-card__link">View Details →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__media">
+          <img class="project-card__image" src="https://placehold.co/640x360/10b981/ffffff?text=Teacher+Connect+Platform" alt="Teacher Connect Platform" width="640" height="360">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Teacher Connect Platform</h3>
+          <p class="project-card__desc">Enhanced teacher enablement with lesson planning, remedials, approvals, and academic workflows.</p>
+          <div class="project-card__tags">
+            <span class="project-card__tag">Teacher Enablement</span>
+            <span class="project-card__tag">Product Strategy</span>
+            <span class="project-card__tag">Workflow</span>
+          </div>
+          <a href="#" class="project-card__link">View Details →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__media">
+          <img class="project-card__image" src="https://placehold.co/640x360/f59e0b/ffffff?text=Assessment+Framework" alt="Curriculum-Aligned Assessment Framework" width="640" height="360">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Curriculum-Aligned Assessment Framework</h3>
+          <p class="project-card__desc">Developed scalable assessments mapped to Bloom’s Taxonomy and NEP learning outcomes.</p>
+          <div class="project-card__tags">
+            <span class="project-card__tag">Assessments</span>
+            <span class="project-card__tag">Pedagogy</span>
+            <span class="project-card__tag">Curriculum</span>
+          </div>
+          <a href="#" class="project-card__link">View Details →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__media">
+          <img class="project-card__image" src="https://placehold.co/640x360/ef4444/ffffff?text=LMS+%2B+ERP+Solution" alt="Integrated LMS + ERP Solution" width="640" height="360">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Integrated LMS + ERP Solution</h3>
+          <p class="project-card__desc">Led integration of academic operations, attendance, reporting, and digital learning ecosystems.</p>
+          <div class="project-card__tags">
+            <span class="project-card__tag">LMS</span>
+            <span class="project-card__tag">ERP</span>
+            <span class="project-card__tag">Academic Operations</span>
+          </div>
+          <a href="#" class="project-card__link">View Details →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__media">
+          <img class="project-card__image" src="https://placehold.co/640x360/8b5cf6/ffffff?text=Product+Moat+Strategy" alt="EdTech Product Moat Strategy" width="640" height="360">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">EdTech Product Moat Strategy</h3>
+          <p class="project-card__desc">Defined strategic feature roadmap and competitive differentiation across multiple EdTech pillars.</p>
+          <div class="project-card__tags">
+            <span class="project-card__tag">Strategy</span>
+            <span class="project-card__tag">Product Leadership</span>
+            <span class="project-card__tag">Innovation</span>
+          </div>
+          <a href="#" class="project-card__link">View Details →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__accent" aria-hidden="true"></div>
+      <div class="footer__columns">
+        <div class="footer__brand">
+          <p class="footer__name">Shail Ghode</p>
+          <p class="footer__tagline">Driving impactful EdTech products through innovation, pedagogy, and product leadership.</p>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__heading">Quick links</h2>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__heading">Social</h2>
+          <ul class="footer__social">
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><span aria-hidden="true">💼</span></a></li>
+            <li><a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Medium"><span aria-hidden="true">✍️</span></a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter"><span aria-hidden="true">🐦</span></a></li>
+            <li><a href="mailto:shailesh.ghode@example.com" class="social-icon-btn" aria-label="Email"><span aria-hidden="true">✉️</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Shail Ghode — Built with passion for education, innovation, and lifelong learning. <span class="footer__heart" aria-hidden="true">♥</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

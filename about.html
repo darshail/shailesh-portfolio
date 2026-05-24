@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var stored = localStorage.getItem("aanya-theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+  <title>About | Shailesh Ghode</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Main site navigation: stays at the top while you scroll -->
+  <nav class="nav">
+    <!-- Brand / logo area on the left -->
+    <a href="index.html" class="nav__brand">Shailesh Ghode</a>
+
+    <div class="nav__controls">
+      <ul id="nav-menu" class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link active">About</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button type="button" class="nav__theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+      <button
+        class="nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="about-header">
+    <h1 class="about-header__title">About Shailesh</h1>
+    <p class="about-header__subtitle">Lead Product Manager • EdTech Strategist • Learning &amp; Pedagogy Leader.</p>
+  </header>
+
+  <section class="about-stats reveal">
+    <div class="about-stats__item">
+      <span class="about-stats__num" data-count="25" data-suffix="+">0</span>
+      <span class="about-stats__label">years experience</span>
+    </div>
+    <div class="about-stats__item">
+      <span class="about-stats__num" data-count="30" data-suffix="+">0</span>
+      <span class="about-stats__label">shipped projects</span>
+    </div>
+    <div class="about-stats__item">
+      <span class="about-stats__num" data-count="12">0</span>
+      <span class="about-stats__label">awards</span>
+    </div>
+  </section>
+
+  <section class="about-intro">
+    <div class="about-intro__grid">
+      <div class="about-intro__image-wrap">
+      <img
+        class="about-intro__image"
+        src="Shail.png"
+        alt="Shail Ghode — EdTech product leader"
+        width="400"
+        height="400"
+      >
+      </div>
+      <div class="about-intro__bio">
+        <p>With 25 years of experience in the education and EdTech industry, I specialize in building impactful learning products that align pedagogy, technology, and institutional goals. My work focuses on creating scalable academic ecosystems that improve learner engagement, teacher effectiveness, and educational outcomes.</p>
+        <p>Over the years, I have led multidisciplinary teams across Product Management, Learning Design, Content Development, Quality, Training, and Delivery. I strongly believe that successful educational products are built by combining strong pedagogy with user-centric product thinking and operational excellence.</p>
+        <p>Beyond product strategy and academic innovation, I enjoy mentoring teams, designing future-ready learning experiences, and exploring how AI and digital transformation can reshape education. My passion lies in creating meaningful solutions that empower both educators and learners.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-journey">
+    <h2 class="about-journey__heading">Professional Journey</h2>
+    <ol class="timeline">
+      <li class="timeline__item reveal">
+        <span class="timeline__year">2026</span>
+        <span class="timeline__track" aria-hidden="true"></span>
+        <div class="timeline__content">
+          <h3 class="timeline__role">Lead Product Manager, EdTech Solutions</h3>
+          <p class="timeline__desc">Driving AI-enabled academic and learning ecosystem innovations.</p>
+        </div>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__year">2023</span>
+        <span class="timeline__track" aria-hidden="true"></span>
+        <div class="timeline__content">
+          <h3 class="timeline__role">Head of Learning &amp; Product Strategy</h3>
+          <p class="timeline__desc">Led curriculum-aligned digital learning and assessment initiatives for K-12 schools.</p>
+        </div>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__year">2018</span>
+        <span class="timeline__track" aria-hidden="true"></span>
+        <div class="timeline__content">
+          <h3 class="timeline__role">Senior Academic &amp; Product Leader</h3>
+          <p class="timeline__desc">Managed pedagogy, content, training, and delivery teams across large-scale education programs.</p>
+        </div>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__year">2001</span>
+        <span class="timeline__track" aria-hidden="true"></span>
+        <div class="timeline__content">
+          <h3 class="timeline__role">Educator &amp; Instructional Specialist</h3>
+          <p class="timeline__desc">Started journey in teaching, instructional design, and academic operations.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__accent" aria-hidden="true"></div>
+      <div class="footer__columns">
+        <div class="footer__brand">
+          <p class="footer__name">Shail Ghode</p>
+          <p class="footer__tagline">Driving impactful EdTech products through innovation, pedagogy, and product leadership.</p>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__heading">Quick links</h2>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__heading">Social</h2>
+          <ul class="footer__social">
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><span aria-hidden="true">💼</span></a></li>
+            <li><a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Medium"><span aria-hidden="true">✍️</span></a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter"><span aria-hidden="true">🐦</span></a></li>
+            <li><a href="mailto:shailesh.ghode@example.com" class="social-icon-btn" aria-label="Email"><span aria-hidden="true">✉️</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Shail Ghode — Built with passion for education, innovation, and lifelong learning. <span class="footer__heart" aria-hidden="true">♥</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

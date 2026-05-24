@@ -1,0 +1,17 @@
+# contains my API keys
+supabase-config.js
+
+# macOS clutter
+.DS_Store
+
+# Windows clutter
+Thumbs.db
+
+# if we ever install npm packages
+node_modules/
+
+# generic secrets file
+.env
+
+# local-only secrets
+.env.local

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var stored = localStorage.getItem("aanya-theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+  <title>Contact | Shailesh Ghode</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav__brand">Shailesh Ghode</a>
+    <div class="nav__controls">
+      <ul id="nav-menu" class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="contact.html" class="nav__link active">Contact</a></li>
+      </ul>
+      <button type="button" class="nav__theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="contact-header">
+    <h1 class="contact-header__title">Let’s shape the future of learning.</h1>
+    <p class="contact-header__subtitle">Product strategy, EdTech innovation, academic transformation, or simply a meaningful conversation over chai. I usually reply within 24 hours.</p>
+  </header>
+
+  <section class="contact">
+    <div class="contact__grid">
+      <aside class="contact-card reveal">
+        <h2 class="contact-card__heading">Get in touch</h2>
+        <p class="contact-card__item">
+          <span class="contact-card__label">Email</span>
+          <a href="mailto:shailesh.ghode@example.com">shailesh.ghode@example.com</a>
+        </p>
+        <p class="contact-card__item">
+          <span class="contact-card__label">Location</span>
+          Mumbai, India
+        </p>
+        <div class="contact-card__social">
+          <span class="contact-card__label">Connect</span>
+          <div class="contact-card__social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><span aria-hidden="true">💼</span></a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Dribbble"><span aria-hidden="true">🎨</span></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter"><span aria-hidden="true">🐦</span></a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="contact-form-wrap reveal">
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="contact-form__field contact-form__field--float">
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder=" ">
+            <label for="name">Full Name</label>
+          </div>
+          <div class="contact-form__field contact-form__field--float">
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder=" ">
+            <label for="email">Email Address</label>
+          </div>
+          <div class="contact-form__field contact-form__field--float">
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a subject</option>
+              <option value="Product Consultation">Product Consultation</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="EdTech Strategy">EdTech Strategy</option>
+              <option value="Speaking Engagement">Speaking Engagement</option>
+              <option value="Other">Other</option>
+            </select>
+            <label for="subject">Subject</label>
+          </div>
+          <div class="contact-form__field contact-form__field--float">
+            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit" class="contact-form__submit btn-shine">Send Message</button>
+        </form>
+        <p id="contact-success" class="contact-success" hidden>
+          ✅ Thanks! Your message was sent successfully. I’ll get back to you within 24 hours.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__accent" aria-hidden="true"></div>
+      <div class="footer__columns">
+        <div class="footer__brand">
+          <p class="footer__name">Shail Ghode</p>
+          <p class="footer__tagline">Driving impactful EdTech products through innovation, pedagogy, and product leadership.</p>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__heading">Quick links</h2>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__heading">Social</h2>
+          <ul class="footer__social">
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><span aria-hidden="true">💼</span></a></li>
+            <li><a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Medium"><span aria-hidden="true">✍️</span></a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter"><span aria-hidden="true">🐦</span></a></li>
+            <li><a href="mailto:shailesh.ghode@example.com" class="social-icon-btn" aria-label="Email"><span aria-hidden="true">✉️</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Shail Ghode — Built with passion for education, innovation, and lifelong learning. <span class="footer__heart" aria-hidden="true">♥</span></p>
+    </div>
+  </footer>
+
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
